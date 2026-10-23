@@ -17,7 +17,7 @@ jobs:
         with:
           flutter-version: '3.19.x'
           channel: 'stable'
-      - run: flutter create . --platforms=android --org com.hifztracker.app
+      - run: flutter create . --platforms=android --org com.hifztracker.app --project-name=hifz_tracker
       - run: flutter pub get
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
